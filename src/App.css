@@ -1,38 +1,110 @@
 .App {
+  font-family: sans-serif;
+}
+
+body {
+  color: #70757a;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h4 {
+  color: #202124;
+}
+h1 {
+  font-size: 74px;
+  display: inline;
+}
+
+h2 {
+  font-size: 34px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+h4 {
+  margin-bottom: 13px;
+}
+
+p {
+  margin: 5px auto 0;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+#weather-app {
+  padding: 10px;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+#submit {
+  background-color: #fff;
+  font-size: 14px;
+  padding: 6px 10px 4px;
+  color: #70757a;
+  border: 1px solid rgb(230 230 230);
+  line-height: 1.6;
+  position: relative;
+  top: 1px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgb(230 230 230);
+  transition: all 100ms ease-in-out;
+}
+
+#submit:hover {
+  background-color: rgb(230 230 230);
+  color: #fff;
+}
+
+#current-temp-icon {
+  width: 80px;
+  position: relative;
+  top: -10px;
+  right: 05px;
+}
+
+.container {
+  border-radius: 10px;
+  margin: 30px auto 0;
+  max-width: 650px;
+  min-width: 570px;
+  padding: 30px 25px 35px;
+  box-shadow: 5px 5px 8px #e9e9e9;
+  background: linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%);
+}
+
+.form-control {
+  display: inline;
+  width: 65%;
+  padding-right: 0;
+  font-size: 14px;
+  border: 1px solid rgb(230 230 230);
+  box-shadow: 2px 2px 5px rgb(230 230 230);
+}
+
+.Temperature {
   text-align: center;
+  margin-top: -5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.unit {
+  font-size: 17px;
+  display: inline;
+  position: relative;
+  bottom: 35px;
+  left: -2px;
+}
+.temp-icon {
+  padding-left: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Description {
+  margin: 5px 0 0 15px;
+  line-height: 1.7;
 }
