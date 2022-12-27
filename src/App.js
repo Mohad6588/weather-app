@@ -29,6 +29,16 @@ function App() {
           </div>
         </div>
       </div>
+      <p className="text-center">
+        <a
+          href="https://github.com/Mohad6588/weather-app"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Open source code
+        </a>{" "}
+        by Mohadeseh Moradian
+      </p>
     </div>
   );
 }
